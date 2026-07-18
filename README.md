@@ -1,6 +1,6 @@
 # AI Multi-Criteria Geo Selector
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-geo-selector.streamlit.app/)
+[![Click Here to Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-geo-selector.streamlit.app/)
 
 **Natural Language to Spatial Suitability Mapping**
 
