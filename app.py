@@ -239,6 +239,10 @@ with col_inputs:
     st.info("Designate study area geometry (max limit: 5,000 km²).")
 
 with col_map:
+    # Action Button
+    analyze_btn = st.button("Execute Geospatial Analysis", use_container_width=True, type="primary")
+    st.markdown("<br>", unsafe_allow_html=True)
+    
     # Build drawing map
     # Center initially near Thessaly plain, Greece (historic Daniel flood region)
     m = folium.Map(location=[39.4, 22.3], zoom_start=9)
@@ -275,9 +279,7 @@ with col_map:
             except Exception as e:
                 st.error(f"Error calculating area: {e}")
 
-# Action Button
-st.markdown("---")
-analyze_btn = st.button("Execute Geospatial Analysis", use_container_width=True, type="primary")
+
 
 if analyze_btn:
     # Validate settings & state
